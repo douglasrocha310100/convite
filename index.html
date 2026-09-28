@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Convite Especial</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TELA DE ABERTURA -->
+    <section id="abertura" class="abertura">
+
+        <div class="abertura-conteudo">
+
+            <div class="coracao">♥</div>
+
+            <h1>Você recebeu um convite especial</h1>
+
+            <p>
+                Prepare-se para uma pequena surpresa...
+            </p>
+
+            <button id="btnAbrir">
+                Abrir convite
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONVITE -->
+    <main id="convite" class="convite">
+
+        <div class="convite-card">
+
+            <p class="pequeno">
+                COM MUITO CARINHO
+            </p>
+
+            <h1>
+                Bernardo Rocha
+            </h1>
+
+            <p class="idade">
+                1 Aninho!
+            </p>
+
+            <img
+                src="img/foto.jpg"
+                alt="Foto da aniversariante"
+                class="foto"
+            >
+
+            <p class="mensagem">
+                Quero compartilhar esse momento
+                tão especial com pessoas que fazem
+                parte da nossa história.
+            </p>
+
+
+            <!-- VÍDEO -->
+            <div class="video-area">
+
+                <button id="btnVideo" class="video-button">
+
+                    <span class="play">▶</span>
+
+                    <span>
+                        Assistir à surpresa
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- INFORMAÇÕES -->
+            <div class="informacoes">
+
+                <div class="info">
+                    <span class="icone">📅</span>
+
+                    <div>
+                        <strong>Data</strong>
+                        <p>19 de fevereiro de 2027</p>
+                    </div>
+                </div>
+
+
+                <div class="info">
+                    <span class="icone">⏰</span>
+
+                    <div>
+                        <strong>Horário</strong>
+                        <p>19:30</p>
+                    </div>
+                </div>
+
+
+                <div class="info">
+                    <span class="icone">📍</span>
+
+                    <div>
+                        <strong>Local</strong>
+                        <p>Espaço de Eventos</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- BOTÕES -->
+            <div class="botoes">
+
+                <a
+                    href="https://www.google.com/maps"
+                    target="_blank"
+                    class="botao"
+                >
+                    📍 Ver localização
+                </a>
+
+                <a
+                    href="https://wa.me/5500000000000"
+                    target="_blank"
+                    class="botao whatsapp"
+                >
+                    💬 Confirmar presença
+                </a>
+
+            </div>
+
+
+            <p class="final">
+                Espero você para comemorar comigo! ❤️
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- MODAL DO VÍDEO -->
+    <div id="modalVideo" class="modal">
+
+        <div class="modal-conteudo">
+
+            <button id="fecharVideo" class="fechar">
+                ×
+            </button>
+
+            <video
+                id="video"
+                controls
+                playsinline
+            >
+                <source
+                    src="video/surpresa.mp4"
+                    type="video/mp4"
+                >
+
+                Seu navegador não suporta vídeo.
+            </video>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

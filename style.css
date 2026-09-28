@@ -1,0 +1,387 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f7efe8;
+    color: #4b3832;
+}
+
+
+/* =========================
+   ABERTURA
+========================= */
+
+.abertura {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(80, 50, 40, 0.75),
+            rgba(80, 50, 40, 0.75)
+        ),
+        url("img/fundo.jpg") center / cover;
+
+    z-index: 1000;
+
+    transition: opacity 0.8s ease;
+}
+
+.abertura.esconder {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.abertura-conteudo {
+    text-align: center;
+    color: white;
+
+    max-width: 500px;
+    padding: 30px;
+}
+
+.coracao {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.abertura h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.abertura p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.abertura button {
+    border: none;
+    padding: 15px 35px;
+
+    border-radius: 30px;
+
+    background: white;
+    color: #6d4c41;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.abertura button:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   CONVITE
+========================= */
+
+.convite {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 50px 20px;
+}
+
+.convite-card {
+    width: 100%;
+    max-width: 650px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.12);
+}
+
+.pequeno {
+    font-size: 12px;
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+.convite h1 {
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.idade {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.foto {
+    width: 190px;
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #f1ddd1;
+
+    margin-bottom: 25px;
+}
+
+.mensagem {
+    font-size: 18px;
+    line-height: 1.7;
+
+    max-width: 500px;
+
+    margin: auto auto 30px;
+}
+
+
+/* =========================
+   VÍDEO
+========================= */
+
+.video-area {
+    margin: 30px 0;
+}
+
+.video-button {
+    width: 100%;
+
+    padding: 20px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #7b574b;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    transition: 0.3s;
+}
+
+.video-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.15);
+}
+
+.play {
+    font-size: 25px;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.informacoes {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    text-align: left;
+}
+
+.info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    background: #faf5f1;
+
+    border-radius: 12px;
+}
+
+.icone {
+    font-size: 28px;
+}
+
+.info strong {
+    display: block;
+
+    margin-bottom: 4px;
+}
+
+.info p {
+    margin: 0;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botoes {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.botao {
+    display: block;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #7b574b;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-2px);
+}
+
+.whatsapp {
+    background: #4c8b62;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    margin-top: 35px;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.85);
+
+    z-index: 2000;
+
+    padding: 20px;
+}
+
+.modal.ativo {
+    display: flex;
+}
+
+.modal-conteudo {
+    width: 100%;
+    max-width: 850px;
+
+    position: relative;
+}
+
+.modal video {
+    width: 100%;
+
+    max-height: 80vh;
+
+    border-radius: 12px;
+}
+
+.fechar {
+    position: absolute;
+
+    right: -5px;
+    top: -45px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .convite {
+        padding: 20px 12px;
+    }
+
+    .convite-card {
+        padding: 35px 20px;
+    }
+
+    .abertura h1 {
+        font-size: 28px;
+    }
+
+    .convite h1 {
+        font-size: 42px;
+    }
+
+    .foto {
+        width: 160px;
+        height: 160px;
+    }
+
+}
